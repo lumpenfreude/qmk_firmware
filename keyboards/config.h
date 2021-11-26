@@ -1,0 +1,65 @@
+#pragma once
+
+#include "config_common.h"
+
+#define VENDOR_ID    0xFEED
+#define PRODUCT_ID   0x0420
+#define DEVICE_VER   0x0001
+#define MANUFACTURER elen
+#define PRODUCT      plank
+
+#define MATRIX_ROWS 4 
+#define MATRIX_COLS 12
+
+#define MATRIX_ROW_PINS { A0, A1, A2, A3 } 
+#define MATRIX_COL_PINS { B0, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B12 }
+
+#define ENCODERS_PAD_A { A15 }
+#define ENCODERS_PAD_B { A14 }
+
+#define AUDIO_PIN A8
+#define AUDIO_PWM_DRIVER PWMD1
+#define AUDIO_PWM_CHANNEL 1
+#define AUDIO_STATE_TIMER GPTD4
+#define AUDIO_PWM_PAL_MODE 42
+
+#define UNUSED_PINS
+
+#define DIODE_DIRECTION COL2ROW
+
+//#define LED_NUM_LOCK_PIN A14
+//#define LED_CAPS_LOCK_PIN A15
+//#define LED_SCROLL_LOCK_PIN B2
+//#define LED_COMPOSE_PIN B1
+ 
+#define RGB_DI_PIN B15
+#define RGBLED_NUM 48 
+#define RGBLIGHT_HUE_STEP 8
+#define RGBLIGHT_SAT_STEP 8
+#define RGBLIGHT_VAL_STEP 8
+#define RGBLIGHT_LIMIT_VAL 155 /* The maximum brightness level */
+#define RGBLIGHT_ANIMATIONS
+#define RGBLIGHT_EFFECT_KNIGHT_LED_NUM 4
+#define RGBLIGHT_EFFECT_KNIGHT_LENGTH 6
+#define RGBLIGHT_EFFECT_SNAKE_LENGTH 8
+#define RGBLIGHT_BREATHE_TABLE_SIZE 256 
+#define RGBLIGHT_EFFECT_BREATHE_CENTER 1.85  // 1 to 2.7
+#define RGBLIGHT_EFFECT_BREATHE_MAX    255   // 0 to 255
+
+#define DEBOUNCE 5
+
+//#define FORCE_NKRO
+
+//#define NO_DEBUG
+
+//#define NO_PRINT
+
+//#define NO_ACTION_LAYER
+//#define NO_ACTION_TAPPING
+//#define NO_ACTION_ONESHOT
+
+#define NO_ACTION_MACRO
+#define NO_ACTION_FUNCTION
+
+//#define BOOTMAGIC_LITE_ROW 0
+//#define BOOTMAGIC_LITE_COLUMN 0

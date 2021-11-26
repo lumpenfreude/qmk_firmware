@@ -1,0 +1,15 @@
+MCU = STM32F401
+BOOTLOADER = stm32-dfu 
+BOOTMAGIC_ENABLE = yes      # Enable Bootmagic Litec 
+MOUSEKEY_ENABLE = yes       # Mouse keys
+EXTRAKEY_ENABLE = yes       # Audio control and System control
+CONSOLE_ENABLE = yes        # Console for debug
+COMMAND_ENABLE = yes        # Commands for debug and configuration
+SLEEP_LED_ENABLE = no       # Breathing sleep LED during USB suspendg
+NKRO_ENABLE = no            # USB Nkey Rollover
+ENCODER_ENABLE = yes
+BACKLIGHT_ENABLE = no       # Enable keyboard backlight functionality
+RGBLIGHT_ENABLE = yes
+RGBLIGHT_DRIVER = WS2812	# Enable keyboard RGB underglow
+AUDIO_ENABLE = yes
+AUDIO_DRIVER = pwm_hardware
